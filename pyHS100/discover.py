@@ -32,6 +32,7 @@ class Discover:
             protocol = TPLinkSmartHomeProtocol()
 
         target = "255.255.255.255"
+        # target = "192.168.1.48"
 
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
